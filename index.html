@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style>
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>3rd Anti-UAV Challenge</title>
+  <meta name="description" content="Catch UAVs that Want to Watch You ---">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="1st Anti-UAV Challenge" />
+  <meta property="og:url" content="https://Anti-UAV.github.io/" />
+  <meta property="og:description" content="Catch UAVs that Want to Watch You ---" />
+  <meta property="og:site_name" content="Anti-UAV" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:url" content="" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/lineabasic.css">
+  <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href=".//home.css">
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a target="_blank" href="https://cvpr.thecvf.com/">
+            <img src="./img/CVPR2023logo.png" alt="FOLIO LOGO" style=" height:75px;" />
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right" style="padding-top:10px;">
+            <li><a href="/">Home</a></li>
+            <li><a href="/schedule">Schedule</a></li>
+            <li><a href="/speakers">Speakers</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge <span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/Evaluate" target="_blank">EVALUATE</a></li>
+                <li><a href="/dataset" target="_blank">DATASET</a></li>
+                <!-- <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li> -->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">LEADERBOARD<span
+                      class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/leaderboard" target="_blank">Leaderboard of the 1st Anti-UAV</a></li>
+                    <li><a href="/leaderboard2" target="_blank">Leaderboard of the 2nd Anti-UAV</a></li>
+                    <li><a href="/leaderboard3" target="_blank">Leaderboard of the 3rd Anti-UAV</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/submission">Submission</a></li>
+            <li><a href="/organizers">Organizers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-content">
+
+      <p><br /></p>
+      <style type="text/css">
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        div {
+          position: relative;
+        }
+
+        div w {
+          position: absolute;
+          right: 40px;
+          top: 40px;
+          color: white;
+        }
+      </style>
+      <div>
+        <img src="./img/bgc.jpg" style="width:100%; min-height:200px" />
+        <font size="6"><strong>
+            <w>The 3rd Anti-UAV Workshop & Challenge</w>
+          </strong></font>
+        <font size="6">
+          <w><br><br><br>Morning, Jun 18th, Sun, Vancouver Canada<br /><br /><br /></w>
+        </font>
+      </div>
+      <p><br /></p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2><b>&#128293&#128293&#128293 News &#128293&#128293&#128293</b></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <b>- Recently, We have received many letters requesting that we appropriately extend the deadline for submission of papers, taking into account various factors. After discussion by the organizing committee and seeking instructions from the CVPR 2023 Workshop Committee, the deadline for submission of papers will be extended. All students are welcome to continue to submit their papers. Students who have already submitted their papers can still submit new versions before the new deadline. We have updated the relevant time on the <a style="color:blue" href="schedule/index.html">schedule page</a>.</b>
+          <br>
+          <b>- The evaluation service has been finished. We have published the Top 3 teams in two tracks on <a style="color: blue;" href="leaderboard3/index.html">leaderboard</a>.</b>
+          <br>
+          <b>- The codelab has been released and provided the evaluation service and we will close the evaluation sever on Mar 13 '23 6:00 PM PDT, please take attention to the time. Please clike the link to your track. <a style="color:blue" href="https://codalab.lisn.upsaclay.fr/competitions/10176"> track1</a>; <a style="color:blue" href="https://codalab.lisn.upsaclay.fr/competitions/10177">track2.</a> </b>
+          <br>
+          <b>- We have published the <a style="color: blue;" href="https://modelscope.cn/models/damo/3rd_Anti-UAV_CVPR23/summary">download link</a> of the test set. In order to solve the problem of inaccurate annotation in test sets, we are in process for the correction in test sets. We plan to open codelab and provide the evaluation service on Mar 10 '23 6:00 PM PDT.</b>
+          <br>
+          <b>- We provide the related <a style="color: blue;" href="https://yeu.h5.xeknow.com/sl/3XgcyN">videos</a> of downloading of datasets, baseline training and inference, and evaluation operation. At the same time, we add ostracker baseline on <a style="color: blue;" href="https://modelscope.cn/models/damo/cv_vitb_video-single-object-tracking_ostrack-l/summary"> Modelscope</a></b>.
+          <br>
+          <b>- We have updated the information about the label in <a style="color: blue;" href="/dataset">dataset.</a></b>
+          <br>
+          <b>- We will hold a live at 7:00 PM(UTC+8) 09/02/2023 to introduce the information about workshop and challenge, and share the experience of building the baseline model on ModelScope. See the Live by join DingTalk Group (group number: 9615032602). </b>
+          <br>
+          <b>- We have published the download link of train set and baseline on <a style="color: blue;" href="https://modelscope.cn/models/damo/3rd_Anti-UAV_CVPR23/summary">Modelscope</a>. </b>
+          <br>
+          <b>- The training set and baseline model will be released on Feb 06 '23 06:00 PM PDT. </b>
+          <br>
+          <b>- The testing set will be released with the opening of the results submission portal on Mar 06 '23 06:00 PM PDT.</b>
+          <br>
+          <b>- We encourage the challenge participants to make full use of the training set for the purpose of training and cross-validation in both track.</b>
+        </div>
+      </div>
+      <p><br /></p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2><b>
+              <p style="text-align: center">Schedule</p>
+            </b></h2>
+          <p>
+          <table class="table table-striped">
+            <tbody>
+              <div class="trend-entry d-flex">
+                <div class="trend-contents">
+                  <table class="table  table-hover" style="font-size:14px">
+                    <thead>
+                      <tr>
+                        <th width="110" scope="col"> Date </th>
+                        <th width="400" scope="col"> Jun 18, 2023 <br /></th>
+                        <th width="200" scope="col"> Speaker</th>
+                        <th width="507" scope="col"> Topic</th>
+                        <!-- May 1st saturday 2021 -->
+                      </tr>
+                </div>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>08:30-08:40</td>
+                    <td></td>
+                    <td></td>
+                    <td>Opening Remarks and Welcome</td>
+                  </tr>
+                  <tr>
+                    <td>08:40-09:10</td>
+                    <td></td>
+                    <td></td>
+                    <td>The 3rd Anti-UAV challenge introduction and results</td>
+                  </tr>
+                  <tr>
+                    <td>09:10-09:25</td>
+                    <td></td>
+                    <td></td>
+                    <td><strong>Oral talk 1: </strong>1st-Place Award in Track 1 and 3rd-Place in Track 2 of the 3rd Anti-UAV Challenge.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>09:25-09:35</td>
+                    <td></td>
+                    <td></td>
+                    <td><strong>Oral talk 2: </strong>1st-Place Award in track 2 of the 3rd Anti-UAV Challenge.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="17">09:35-10:05</td>
+                    <td>Professor at Linköping University</td>
+                    <td>Michael Felsberg</td>
+                    <td><strong>Invited talk 1: </strong> From Discriminative Object Tracking to Video Instance Segmentation.</td>
+                  </tr>
+                  <tr>
+                    <td>10:05-10:20</td>
+                    <td></td>
+                    <td></td>
+                    <td><strong>Oral talk 3: </strong>2nd-Place Award in track 1 and Best Paper Award of the 3rd Anti-UAV Challenge.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10:20-10:30</td>
+                    <td></td>
+                    <td></td>
+                    <td><strong>Oral talk 4: </strong>2nd-Place Award in track 2 of the 3rd Anti-UAV Challenge.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10:30-11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td>Poster session and coffee break</td>
+                  </tr>
+                  <tr>
+                    <td>11:00-11:30</td>
+                    <td>Assistant Professor at University of Amsterdam</td>
+                    <td>Pascal Mettes</td>
+                    <td><strong>Invited talk 2: </strong>The hierarchy of actions and what drones could learn about the present or future.</td>
+                  </tr>
+                  <tr>
+                    <td>11:30-11:40</td>
+                    <td></td>
+                    <td></td>
+                    <td><strong>Oral talk 5: </strong>3rd-Place Award in track 1 of the 3rd Anti-UAV Challenge.</td>
+                  </tr>
+                  <tr>
+                    <td>11:40-12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td>Thanks & Future Plans</td>
+                  </tr>
+                </tbody>
+          </table>
+        </div>
+        <p><br /></p>
+        <div class="row" id="intro">
+          <div class="col-xs-12">
+            <h2><b>Description of the 3rd Anti-UAV Workshop & Challenge</b></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p></p>
+            <p>Civil unmanned aerial vehicles (UAVs), a.k.a. drones, have been widely used in a broad 
+              range of civil application domains, including consumer communications, delivery of goods, 
+              and remote sensing, owning to their autonomy, flexibility, affordability, and popularity. 
+              UAV applications offer possible civil and public domain applications in which single or
+              multiple UAVs may be used. Nevertheless, we should be aware of the potential threat to our
+              lives caused by UAV intrusion since UAVs can also be used to conduct physical attacks 
+              (e.g., via explosives) and cyber-attacks (e.g., hacking critical infrastructure). Moreover,
+              unauthorized UAVs sometimes violate aviation safety regulations, thereby bringing hazards
+              to civilian aircraft and passengers and even causing airport disruptions and flight delays. As
+              shown in Fig. 1 and 2, there have been multiple instances of drone sightings halted air traffic
+              at airports, leading to significant economic losses for airlines. It is highly desired to develop
+              anti-UAV techniques to defend against drone accidents.</p>
+            <p>Historically, radar is certainly a compelling technology for detecting traditional incoming 
+              airborne threats. However, these comparatively small UAVs are extremely difficult for radar 
+              to see because they have very small radar cross-sections, low flight altitudes, and erratic 
+              flight paths. Therefore, how to use computer vision and machine learning algorithms to 
+              perceive UAVs is a crucial part of the whole UAV-defense system.</p>
+            <p>Traditional computer vision research for UAV detection and tracking lacks a high-quality
+              benchmark in dynamic environments. To mitigate this gap, we held the 1-st Anti-UAV Workshop & Challenge with CVPR 2020, 
+              releasing a dataset consisting of 160
+              video sequences (both RGB and infrared). The workshop attracted attention from researchers
+              all over the world. Many submitted solutions outperform the baseline method, making great
+              contributions to addressing the anti-UAV problem. The 2-nd Anti-UAV Workshop & Challenge with ICCV 2021 extends the
+              benchmark dataset to 250 high-quality, full HD thermal infrared video sequences, spanning
+              multiple occurrences of multi-scale (i.e., large, small and tiny, as shown in Fig. 1) UAVs.
+              The workshop encourages participants to develop automated methods that can detect and
+              track UAVs in thermal infrared videos with high accuracy. Particularly, algorithms that can
+              detect and track fast-moving drones in complex environments (e.g., occlusion by
+              cloud/buildings/trees, and fake targets like kites, balloons, birds, etc.) are highly expected.
+            </p>
+            <p>This workshop will bring together academic and industrial experts in the field of UAVs
+              to discuss the techniques and applications of tracking UAVs. Participants are invited to
+              submit their original contributions, surveys, and case studies that address the works of
+              UAV’s detection and tracking issues.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <img src="img/Fig1.png" />
+          </div>
+        </div>
+        <p style="text-align: center">Figure 1 Examples of UAV-related incidents.</p>
+        <p><br /></p>
+
+        <div class="row">
+          <div class="col-md-12">
+            <img src="img/Figure2.jpg" />
+          </div>
+        </div>
+        <p style="text-align: center">Figure 2 A map illustrating the worldwide drone incidents (courtesy of Dedrone®).</p>
+        <p><br /></p>
+
+        <div class="grade">
+          <span class='span1'>a</span>
+          <span class='span2'>b</span>
+          <span class='span3'>c</span>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="1.png" />
+          </div>
+        </div>
+        <p style="text-align: center">Figure 3 Illustrations of civil UAVs. (a) Large civil UAV; (b) Small civil UAV;
+          (c) Tiny civil UAV.</p>
+        <p><br /></p>
+
+        <div class="row">
+          <div class="col-md-12">
+            <img src="img/Figure4.jpg" />
+          </div>
+        </div>
+        <p style="text-align: center">Figure 4 Examples of backgrounds and targets in the dataset.</p>
+        <p><br /></p>
+
+        <div class="row" id="topic">
+          <div class="col-xs-12">
+            <h2><b>Topics of interest</b></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p>The submissions are expected to deal with visual perception and processing tasks which include but are
+              not limited to:</p>
+            <ul>
+              <li class='uili'>Applications of computer vision and machine learning on anti-UAV</li>
+              <li class='uili'>Strategies for searching UAVs based on RGB/NIR data</li>
+              <li class='uili'>Spectrum sensing techniques for UAVs detection</li>
+              <li class='uili'>Localization and open-set identification of UAVs</li>
+              <li class='uili'>Scene understanding for anti-UAVs</li>
+              <li class='uili'>Small/tiny object detection and tracking techniques</li>
+              <li class='uili'>Fine-grained UAV target recognition</li>
+              <li class='uili'>Real-time lightweight deep learning inference for anti-UAV</li>
+              <li class='uili'>Infrared image and video analysis for anti-UAV</li>
+              <li class='uili'>Large-scale benchmark datasets on anti-UAV</li>
+              <li class='uili'>Biologically inspired computer vision techniques for anti-UAV</li>
+              <li class='uili'>Technical survey on anti-UAV</li>
+            </ul>
+          </div>
+        </div>
+
+        <p><br /></p>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h2><b>Contact</b></h2>
+            <p>Please feel free to send any question or comments to:
+              <a href="mailto:zhaojian90@u.nus.edu" style="color: blue;">zhaojian90@u.nus.edu</a>,
+              <a href="mailto:jinlei@bupt.edu.cn" style="color: blue;">jinlei@bupt.edu.cn</a>,
+              <a href="mailto:lijianan@bit.edu.cn" style="color: blue;">lijianan@bit.edu.cn</a>.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h2><b>SPONSORS</b></h2>
+            <p style=" text-align:left;margin-top: 30px;">
+              <!-- <a class="sponsorsa" href="https://www.oppo.com/cn/"><img src="./img/oppo.png" style=" height:26px" /></a>
+              <a class="sponsorsa" href="http://ai.360.cn"><img src="./img/360.png"
+                  style=" height:45px;margin-left:20px" /></a> -->
+              <b>Gold Sponsors:</b>
+              <a class="sponsorsa" href="https://damo.alibaba.com/"><img src="./img/alibaba damo.png"
+                  style=" height:45px;margin-left:20px" /></a>
+              <a class="sponsorsa" href="https://modelscope.cn/home"><img src="./img/ModelScope.png"
+                style=" height:45px;margin-left:20px" /></a>
+              <!-- <a class="sponsorsa" href="http://www.thejiangmen.com/"><img src="./img/jiangmen.png"
+                  style=" height:45px;margin-left:20px" /></a>
+              <a class="sponsorsa" href="http://home.baidu.com/"><img src="./img/baidu.png"
+                  style=" height:45px;margin-left:20px" /></a>
+              <a class="sponsorsa" href="https://www.mdpi.com/journal/drones"><img src="./img/Drones.png"
+                  style=" height:45px;margin-left:20px" /></a>
+              <a class="sponsorsa" href="http://jeit.ie.ac.cn/"><img src="./img/JE.png"
+                  style=" height:45px;margin-left:20px" /></a> -->
+            </p>
+            <p style=" text-align: left;margin-top: 30px;">
+              <b>Silver Sponsors:</b>
+            </p>
+            <p style=" text-align:left;margin-top: 30px;">
+              <b>Bronze Sponsors:</b>
+              <a class="sponsorsa" href="https://www.antgroup.com/"><img src="./img/ant group.jpg"
+                style=" height:45px;margin-left:20px" /></a>
+              <a class="sponsorsa" href="http://dihuge.com/"><img src="./img/ihuge.jpg"
+                style=" height:45px;margin-left:20px" /></a>
+            </p>
+          </div>
+        </div>
+        <p><br /></p>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

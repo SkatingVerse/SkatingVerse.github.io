@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style>
+    video {
+      object-fit: fill;
+      width: 100%;
+      height: 100%px;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>3rd Anti-UAV Workshop & Challenge</title>
+  <meta name="description" content="Catch UAVs that Want to Watch You ---">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="3rd Anti-UAV Workshop & Challenge" />
+  <meta property="og:url" content="https://Anti-UAV.github.io/" />
+  <meta property="og:description" content="Catch UAVs that Want to Watch You ---" />
+  <meta property="og:site_name" content="Anti-UAV" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:url" content="" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/lineabasic.css">
+  <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="./dataset.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar ">
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a target="_blank" href="https://cvpr.thecvf.com/">
+            <img src="../img/CVPR2023logo.png" alt="FOLIO LOGO" style=" height:75px;" />
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right" style="padding-top:10px;">
+            <li><a href="/">Home</a></li>
+            <li><a href="/schedule">Schedule</a></li>
+            <li><a href="/speakers">Speakers</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Challenge <span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/Evaluate" target="_blank">EVALUATE</a></li>
+                <li><a href="/dataset" target="_blank">DATASET</a></li>
+                <!-- <li><a href="/leaderboard" target="_blank">LEADERBOARD</a></li> -->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">LEADERBOARD<span
+                      class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/leaderboard" target="_blank">Leaderboard of the 1st Anti-UAV</a></li>
+                    <li><a href="/leaderboard2" target="_blank">Leaderboard of the 2nd Anti-UAV</a></li>
+                    <li><a href="/leaderboard3" target="_blank">Leaderboard of the 3rd Anti-UAV</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/submission">Submission</a></li>
+            <li><a href="/organizers">Organizers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-content">
+
+      <p><br /></p>
+      <p></p>
+      <div class="lead" align="center" ;>
+        <video src="../1.mp4 " scrolling=no object-fit="fill" frameborder="0" autoplay="autoplay" loop="loop"
+          allow="autoplay;encrypted-media"></video>
+
+      </div>
+      <hr />
+
+      <div class="row" id="dataset">
+        <div class="col-xs-12">
+          <p>The full dataset has been released. There are three subsets in the dataset, i.e., the
+            train subset, the test subset for track 1 and the test subset for track 2. The train subset 
+            consists of 200 thermal infrared video sequences and publishes detailed annotation files 
+            (whether the target exists, target location information and various challenges). 
+            The subset for track 1 also contains 200 video sequences, only providing the position information 
+            of target in the first frame; The subset for track 2 contains 200 video sequences. 
+            This track does not provide any labeled information. 
+            It requires participants to obtain the flag of existence and corresponding target location information of 
+            the target through detection and tracking. Above three subsets do not have any overlap between each other.
+            We propose participants could train a suitable detector or tracker model depending on multiple categories of label information
+            in train subset.
+          </p>
+        </div>
+      </div>
+
+      <p><br></p>
+
+      <div class="row" id="dataset">
+        <div class="col-xs-12">
+          <h2><b>CVPR 2023 Anti-UAV Challenge Dataset</b></h2>
+          <p><b>1. Folder Tree Diagram</b></p>
+          <ul>
+            <li>train<ul>
+                <li>video_name<ul>
+                    <li>000001.jpg</li>
+                    <li>000002.jpg</li>
+                    <li>...</li>
+                    <li>001500.jpg</li>
+                    <li>IR_label.json</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>track1_test<ul>
+                <li>video_name<ul>
+                    <li>000001.jpg</li>
+                    <li>000002.jpg</li>
+                    <li>...</li>
+                    <li>001500.jpg</li>
+                    <li>IR_label.json</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>track2_test<ul>
+              <li>video_name<ul>
+                  <li>000001.jpg</li>
+                  <li>000002.jpg</li>
+                  <li>...</li>
+                  <li>001500.jpg</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          <p></p>
+          <!-- 大 中 小 白天 夜晚 云层 楼宇 虚假目标 速度变化悬停 遮挡 尺度变化 -->
+          <p><b>2.Scenario Variations:</b></p>
+          <p>
+            Compared to the previous challenge, we further enlarge the dataset
+            this year by adding more challenging video sequences with dynamic backgrounds, complex movements, 
+            and tiny-scale targets, such that the resulting new dataset covers a greater variety of scenarios 
+            with multi-scale UAVs.
+            </p>
+          <p>Examples are shown as follows.</p>
+          <p></p>
+          <!-- <div class="col-md-12"> -->
+            <!-- <center><img src="data_01.png" /></center> -->
+          <!-- </div> -->
+          <div class="datasetbox">
+            <ul class="datasetul">
+              <li class="datasetli">
+                <img class="datasetimg" src="cloudbackground.gif" alt="">
+                <span class='datasetspan'>cloud background</span>
+              </li>
+              <li class="datasetli">
+                <img class="datasetimg" src="buildingbackground.gif" alt="">
+                <span class='datasetspan'>building background</span>
+              </li>
+              <li class="datasetli">
+                <img class="datasetimg" src="mountainbackground.gif" alt="">
+                <span class='datasetspan'>mountain background</span>
+              </li>
+              <li class="datasetli">
+                <img class="datasetimg" src="seabackground.gif" alt="">
+                <span class='datasetspan'>sea background</span>
+              </li>
+            </ul>
+            <ul class="datasetul">
+              <li class="datasetli">
+                <img class="datasetimg" src="Fast movement.gif" alt="">
+                <span class='datasetspan'>fast movement</span>
+              </li>
+              <li class="datasetli">
+                <img class="datasetimg" src="Out_of_focus.gif" alt="">
+                <span class='datasetspan'>out_of_focus</span>
+              </li>
+              <li class="datasetli">
+                <img class="datasetimg" src="Scale variation.gif" alt="">
+                <span class='datasetspan'>scale variation</span>
+              </li>
+              <li class="datasetli">
+                <img class="datasetimg" src="No-target scene.gif" alt="">
+                <span class='datasetspan'>no-target scene</span>
+              </li>
+            </ul>
+            <ul class="datasetul">
+              <li class="datasetli">
+                <img class="datasetimg" src="largetarget.gif" alt="">
+                <span class='datasetspan'>large target</span>
+              </li>
+              <li class="datasetli">
+                <img class="datasetimg" src="mediumtarget.gif" alt="">
+                <span class='datasetspan'>medium target</span>
+              </li>
+              <li class="datasetli">
+                <img class="datasetimg" src="smalltarget.gif" alt="">
+                <span class='datasetspan'>small target</span>
+              </li>
+              <li class="datasetli">
+                <img class="datasetimg" src="tinytarget.gif" alt="">
+                <span class='datasetspan'>tiny target</span>
+              </li>
+            </ul>
+            <ul>
+              <p><br></p>
+            </ul>
+          <p><br></p>
+          </div>
+          <p><br></p>
+
+          <p><b>3. Division Rules</b></p>
+          <p><b>train:</b> 200 videos for training your algorithm.</p>
+          <p><b>test-track1:</b> 200 videos for the final submission for track 1.</p>
+          <p><b>test-track2:</b> 200 videos for the final submission for track 2.</p>
+          </b></b>
+        </div><b style="color:red;"><b>
+          </b></b>
+        <p><b>4. Label Information</b></p>
+        <div class="col-xs-12">
+          <table class="table   table-important" style="font-size:14px">
+          <th width="150" scope="col">Attribute</th>
+                <th width="670" scope="col">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td> Description</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>OV/VE</td>
+              <td>Out-of-View:the target moves out of the current view.</td>
+            </tr>
+            <tr>
+              <td>OC</td>
+              <td>Occlusion: the target is partially or heavily occluded.</td>
+            </tr>
+            <tr>
+              <td>FM</td>
+              <td>Fast Motion: the target moves quickly.</td>
+            </tr>
+            <tr>
+              <td>SV</td>
+              <td>Scale Variation: the scale of the bounding boxes over the frames vary significantly.</td>
+            </tr>
+            <tr>
+              <td>TC/IC</td>
+              <td>Thermal/Infrared Crossover: the target has a similar temperature to other objects or background surroundings.</td>
+            </tr>
+            <tr>
+              <td>DBC</td>
+              <td>Dynamic Background Clusters: there are dynamic changes (e.g., waves, leaves, birds) in the background around the target.</td>
+            </tr>
+            <tr>
+              <td>LR</td>
+              <td>Low Resolution: the area of the bounding box is small.</td>
+            </tr>
+            <tr>
+              <td>TS</td>
+              <td>Target Scale: the target is with a tiny, small, medium or large scale.</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        
+      </div>
+
+      <p><br></p>
+
+      <div class="row" id="dataset">
+        <div class="col-xs-12">
+          <h2><b>Download</b></h2>
+          <!-- <p>You can download test-challenge at <a href="https://pan.baidu.com/s/1tKhdFKiaPZ4pAvMrhEtNdA"
+              target="_blank">Baidu Yun</a> (y67q) /<a
+              href="https://drive.google.com/file/d/167ibsP99Gd28wLUywyyBg4SzoV4MTIp2/view?usp=sharing" target="_blank">
+              Google Drive</a></p>
+          <p>You can download test-dev at <a href="https://pan.baidu.com/s/1dJR0VKyLyiXBNB_qfa2ZrA"
+              target="_blank">Baidu Yun</a> (sagx) /<a
+              href="https://drive.google.com/open?id=1GICr5e9CZN0tcFM_VXhyogzxWD3LMvAw" target="_blank"> Google
+              Drive</a></p>
+          <p> News: * 2020/02/19: add IR_label.json </p>
+          <p> News: * 2020/04/08: upload test-challenge </p> -->
+          <p>You can download train set at <a href="https://modelscope.cn/models/damo/3rd_Anti-UAV_CVPR23/summary">Modelscope</a> now. </p>
+          <!-- <p>Coming soon.</p> -->
+          <!-- <p>You can download the test-dev at <a href="https://pan.baidu.com/s/11OnXAzT28WWFqaKPPy00DA">Baidu Yun (vfjb)</a>/<a href="https://drive.google.com/file/d/1UCyapTkvYGJsfn21iUFInHANbDIAkSeX/view?usp=sharing">Google Drive</a></p>
+          <p>You can download the test-challenge at <a href="https://pan.baidu.com/s/1X5KE1lyKfO2KlQYysJ8-TA">Baidu Yun (17dh)</a>/ <a href="https://drive.google.com/file/d/1w0aiMmTOg1SxmsoJxsbA5kqWO9o8Xgum/view?usp=sharing">Google Drive</a>.</p> -->
+        </div>
+        <p><br /></p>
+
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
