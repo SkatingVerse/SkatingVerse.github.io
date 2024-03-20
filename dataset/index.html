@@ -99,7 +99,6 @@
 
       <div class="row" id="dataset">
         <div class="col-xs-12">
-          <p>TBD</p>
           <!-- <p>The full dataset has been released. There are three subsets in the dataset, i.e., the
             train subset, the test subset for track 1 and the test subset for track 2. The train subset 
             consists of 200 thermal infrared video sequences and publishes detailed annotation files 
@@ -175,16 +174,49 @@
           </ul>
           <p></p>
           <!-- 大 中 小 白天 夜晚 云层 楼宇 虚假目标 速度变化悬停 遮挡 尺度变化 -->
-          <p><b>2.Scenario Variations:</b></p>
-          <p>TBD</p>
+          <p><b>2.Json Format:</b></p>
+
+          <div class="col-xs-12">
+          <table class="table   table-important" style="font-size:14px">
+          <th width="150" scope="col">Vedio_name</th>
+                <th width="670" scope="col">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td> Action Class</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>61_K31lXbGj</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>3_y34CCT8G</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>34_tzDbNWvX</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>14_TiIX73u8</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+
           <!-- <p>
             Compared to the previous challenge, we further enlarge the dataset
             this year by adding more challenging video sequences with dynamic backgrounds, complex movements, 
             and tiny-scale targets, such that the resulting new dataset covers a greater variety of scenarios 
             with multi-scale UAVs.
             </p> -->
-          <p>Examples are shown as follows.</p>
-          <p>TBD</p>
           <!-- TBD <div class="col-md-12"> -->
             <!-- <center><img src="data_01.png" /></center> -->
           <!-- </div> -->
@@ -254,10 +286,45 @@
           <p><b>train_vedios:</b> 19993 videos for training your algorithm.</p>
           <p><b>test_vedios:</b> 8586 videos for the final submission.</p>
           </b></b>
-        </div><b style="color:red;"><b>
-          </b></b>
-        <p><b>4. Label Information</b></p>
-        <p>TBD</p>
+        <!-- </div><b style="color:red;"><b>
+          </b></b> -->
+          <p><b>4. Label Information</b></p>
+          <p>We provide semantic annotations hierarchically in action labels. Specifically, we have two levels of 
+          categorical labels, namely set and element. In the set level, there are 11 action classes, including 6 
+          jumps Toe loop (T), Loop (Lo), Axel (A), Lutz (Lz), Salchow (S), Flip (F), 4 spins Camel spin (CSp), Sit 
+          spin (SSp), Upright spin (USp), No Basic (NB) and 1 sequence (Null). While in the fine-grained element 
+          level, the actions are further divided into 28 categories according to the number of turns for jump actions.
+          </p>
+          <p>The mapping between actions and categories is as follows:3Toeloop:0;3Loop:1;
+            2Axel:2;
+            Camel Spin:3;
+            Sit Spin:4;
+            Upright Spin 5;
+            2Salchow:6;
+            2Toeloop:7;
+            3Salchow:8;
+            3Axel:9;
+            3Flip:10;
+            3Lutz:11;
+            No Basic:12;
+            2Lutz:13;
+            4Salchow:14;
+            4Flip:15;
+            4Toeloop:16;
+            4Lutz:17;
+            4Loop:18;
+            2Flip:19;
+            2Loop:20;
+            1Axel:21;
+            1Loop:22;
+            1Salchow:23;
+            1Toeloop:24;
+            1Flip:25;
+            1Lutz:26;
+            Sequence:27;
+            
+            
+            </p>
         <!-- TBD <div class="col-xs-12">
           <table class="table   table-important" style="font-size:14px">
           <th width="150" scope="col">Attribute</th>
@@ -326,7 +393,7 @@
               Drive</a></p>
           <p> News: * 2020/02/19: add IR_label.json </p>
           <p> News: * 2020/04/08: upload test-challenge </p> -->
-          <p>You can download dataset at <a href="https://www.modelscope.cn/datasets/awei2003/1st_SkatingVerse_Challenge_Dataset/files">Modelscope</a> now. </p> 
+          <p>You can download dataset at <a style="color:blue" href="https://www.modelscope.cn/datasets/awei2003/1st_SkatingVerse_Dataset/summary">Modelscope</a> now. </p> 
 
           <!--TBD <p>You can download train set at <a href="https://modelscope.cn/models/damo/3rd_Anti-UAV_CVPR23/summary">Modelscope</a> now. </p> -->
           <!-- <p>Coming soon.</p> -->
